@@ -1,0 +1,17 @@
+:q
+2021-12-02-00:29:07 account: 1 : BUY      -> 25.354970456890292 SPXS at $19.719999313354492 total: $500.0 balance: 500.0
+2021-12-02-00:29:07 account: 1 : BUY      -> 5.070994091378059 SPXS at $19.719999313354492 total: $100.0 balance: 400.0
+2021-12-02-00:29:07 account: 1 : BUY      -> 0.0091324200913242 TSLA at $1095.0 total: $10.0 balance: 390.0
+2021-12-02-00:29:07 account: 1 : DEPOSIT  -> 10000.0 total: 10390.0
+2021-12-02-00:29:07 account: 1 : DEPOSIT  -> 300.0 total: 10690.0
+2021-12-02-00:29:07 account: 1 : WITHDRAW -> 3000.0 total: 7690.0
+2021-12-02-00:29:07 account: 1 : BUY      -> 5.0 VOO at $414.239990234375 total: $2071.199951171875 balance: 5618.800048828125
+2021-12-02-00:29:07 account: 1 : SELL      -> 0.09656238157346468 VOO at $414.239990234375 total: $40.0 balance: 5658.800048828125
+2021-12-02-00:29:07 account: 1 : SELL      -> 4.0 SPXS at $19.719999313354492 total: $78.87999725341797 balance: 5737.680046081543
+2021-12-02-00:29:07 account: 1 : WITHDRAW -> 3.2 total: 5734.480046081543
+2021-12-02-00:29:08 account: 1 : ERROR#3: Stock AMD not-owned
+2021-12-02-00:29:08 account: 1 : ERROR#4: Not-enough-stock VOO to-sell, Have: 4.903437618426535, Requested 500.0
+2021-12-02-00:29:08 account: 1 : ERROR#4: Not-enough-stock SPXS to-sell, Have: 26.42596454826835, Requested 1000.0
+2021-12-02-00:29:08 account: 1 : ERROR#1: Not-enough-funds-to-withdraw: Funds 5734.480046081543 Request 10000000.0
+2021-12-02-00:29:08 account: 1 : BUY      -> 5.0 VOO at $414.239990234375 total: $2071.199951171875 balance: 3663.280094909668
+2021-12-02-00:29:08 account: 1 : SELL      -> 5.0 VOO at $414.239990234375 total: $2071.199951171875 balance: 5734.480046081543
