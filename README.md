@@ -80,3 +80,7 @@ To execute, the testrunner will turn on for the day and start the following:
 - At the end of the day, the `program_main.py` will kill all subprocess and send the email using the email logic.
 
 
+## Planned Updates
+Several updates are planned as the objective of this project is to be something that can be continually updated/improved, including:
+- Making the algorithms their own class, with an abstract parent class so they can be used with a similar interface
+
