@@ -23,7 +23,7 @@ There were a few objectives to this project that focused on learning experiences
 ## High Level Breakdown
 The following is a high level breakdown of the code and how it has been organized.
 
-### Account Infrastructure (Libraries Directory)
+### Libraries Directory (Portfolio Infrastructure)
 The main section of the program is the infrastructure around managing the "portfolios", or tracking different accounts and their stocks. The following classes comprise of the main portfolio logic:
 
 #### AccountLibrary
@@ -43,7 +43,7 @@ The Transaction class is responsible for storing all information for a specific 
 #### ObserverPattern
 There are currently two main ways live stock info can be gathered, through yfinance API calls directly, or though the created "Observer Pattern" which this class performs. yfinance can only be called so many times a day, so this limits how many algorithms can run depending on how many calls they do a second.
 
-The solution was to create an observer pattern class, a class that is the sole source that calls yfinance and dispenses the informatin to the other classes. The ObserverPattern checks the desired stock value every X seconds and saves it to a local database that the other programs can pull from.
+The solution was to create an observer pattern class, a class that is the sole source that calls yfinance and dispenses the information to the other classes. The ObserverPattern checks the desired stock value every X seconds and saves it to a local database that the other programs can pull from.
 
 These databases can also be used in the future for testing and analysis.
 
@@ -64,7 +64,7 @@ This directory contains all the active databases, there are the observer, sqlite
 ### Logs Directory
 Contains the saved information for the accounts and the transactions. These logs can be used to load accounts and save their information so they can be used overtime.
 
-Also contains some maintence logs with debug outputs from different programs.
+Also contains some maintenance logs with debug outputs from different programs.
 
 ### Programs Directory
 Contains the list of programs that can be executed. The programs tie together the portfolio logic and the algorithms to execute certain stock trading methods.
@@ -79,7 +79,7 @@ The startup.sh script will start the following:
 - database_creator_generic_01.py. which saves several stock info logic to the plain text data bases.
 - program_main.py, which starts the main programs and is the primary script. This will kick off:
      - observer_pattern.py, which starts the observer pattern and saves stock data to the sqlite database every X seconds.
-     - Several `program` scripts, each of which run their own stock trading algorithm with different paramaters
+     - Several `program` scripts, each of which run their own stock trading algorithm with different parameters
        - Right now it runs 6 different versions of the buy-when-rise-sell-when-fall algorithm, varying in the perecent change paramater for each
        - Each program is kicked off as a subprocess
      -  At the end of the day, the `program_main.py` will kill all subprocess and send the email using the email logic.
@@ -90,7 +90,7 @@ This runs automatically every trading day from 8:45am-4:15pm EST
 Several updates are planned as one of the primary objectives of this project is to be something that can be continually updated/improved. Current future updates include:
 - Making the algorithms their own class, with an abstract parent class so they can be used with a similar interface.
 - Finishing the historical stock class, so it algorithms can run on historical data and be tested faster.
-- Adding many more stock trading algorithms and more paramaters.
+- Adding many more stock trading algorithms and more parameters.
 - Adding a watchdog program that ensures all other programs are running correctly.
 - Write a brief report to show the code and thought process of the project in a bit more detail.
 
