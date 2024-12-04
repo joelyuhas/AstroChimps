@@ -1,5 +1,5 @@
 # AstroChimps
-Hobby stock trading project using python, sqlite, and automation. This project creates its own account classes and transaction infrastructure, pulls in real time stock data using yfinance, and executes several trading algorithms. It runs on its own "testrunner" computer running Linux that automatically turns on Mon-Fri before trading hours, and turns itself off afterwards.
+Hobby financial services and algorithmic stock trading project using Python, sqlite, and automation. This project creates its own account classes and transaction infrastructure, pulls in real time stock data using yfinance, and executes several trading algorithms. It runs on its own "testrunner" computer running Linux that automatically turns on Mon-Fri before trading hours, and turns itself off afterwards.
 
 At the end of the trading day, an email with the algorithms daily and weekly results is sent to my personal email, along with graphs of the weekly performance compared to SPY.
 
